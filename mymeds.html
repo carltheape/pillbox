@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pillbox</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 </head>
 
@@ -35,12 +38,58 @@
           </div>
       </div>
   </nav>
+
+ <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Medication</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Enter your medication information here:</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form" action="" method="post" class="registration-form">
+                              <form>
+                                <div class="addmeds">
+                                <label for="medsinput">Medication Name</label>
+                                <input type="text" class="form-control" id="medsinput" placeholder="Medication Name">
+                                </div>
+                                <div class="addmeds">
+                                <label for="medsinput2">Dosage</label>
+                                <input type="text" class="form-control" id="medsinput2" placeholder="Dosage">
+                                </div>
+                                <p>When are you supposed to take this medication?</p>
+                                <div><label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">  M (Morning)   
+                                </label></div>
+                                <div><label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">  N (Noon)  
+                                </label></div>
+                                <div><label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">  E (Evening)
+                                </label></div>
+                                <div><label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">  B (Bedtime)
+                                </label></div>
+                                </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
             
   <div class="container">
     <div class="row col-md-6 col-md-offset-2 custyle">
     <table class="table table-striped custab">
     <thead>
-    <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b>Add new meds</a>
+    
         <tr>
             <th>Image</th>
             <th>Medication</th>
@@ -71,8 +120,6 @@
       </div>
     </div>
   </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
