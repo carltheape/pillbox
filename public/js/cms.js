@@ -6,8 +6,10 @@ $(document).ready(function() {
   var med_nameInput = $("#med_name");
   var cmsForm = $("#cms");
   var patientSelect = $("#patient");
+  var rxurl="";
+  var medCode = "";
   // Adding an event listener for when the form is submitted
-  $(cmsForm).on("submit", handleFormSubmit);
+  $(cmsForm).on("submit", api);
   // Gets the part of the url that comes after the "?" (which we have if we're updating a schedule)
   var url = window.location.search;
   var scheduleId;
@@ -29,8 +31,31 @@ $(document).ready(function() {
   // Getting the patients, and their schedules
   getPatients();
 
+  function api(event, res){
+    event.preventDefault();
+    var drug = $("#med_name").val();
+        var queryURL = "https://rximage.nlm.nih.gov/api/rximage/1/rxnav?name="+drug;
+
+
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).done(function(response) {
+          calling = response;
+          console.log(queryURL);
+          rxurl = response.nlmRxImages["0"].imageUrl;
+          medCode = response.nlmRxImages["0"].rxcui;
+          // console.log(rxurl);
+          handleFormSubmit();
+  
+});
+        
+        
+    };
+
   // A function for handling what happens when the form to create a new schedule is submitted
-  function handleFormSubmit(event) {
+  function handleFormSubmit() {
+    console.log(rxurl);
     event.preventDefault();
     // Wont submit the schedule if we are missing a medicine, or patient
     if (!med_nameInput.val().trim() || !patientSelect.val()) {
@@ -38,6 +63,8 @@ $(document).ready(function() {
     }
     // Constructing a newSchedule object to hand to the database
     var newSchedule = {
+      img_link: rxurl,
+      med_code: medCode,
       med_name: med_nameInput
         .val()
         .trim(),

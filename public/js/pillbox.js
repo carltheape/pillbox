@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var medlist = [];
   /* global moment */
 
   // pillboxContainer holds all of our schedules
@@ -61,7 +62,30 @@ $(document).ready(function() {
       schedulesToAdd.push(createNewRow(schedules[i]));
     }
     pillboxContainer.append(schedulesToAdd);
+    medConflict(medlist);
   }
+
+
+function medConflict(array){
+  console.log(array);
+  var myDrugCodes = "";
+  for (var i = 0; i < array.length; i++) {
+    myDrugCodes+=array[i]+"+";
+  };
+  var queryURL = "https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis="+myDrugCodes;
+   $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).done(function(response) {
+          calling = response;
+          console.log("made a call for interactions: ");
+          console.log(queryURL);
+          console.log(response);
+          console.log(response.fullInteractionTypeGroup["0"].fullInteractionType.length);
+          for (var i = 0; i < response.fullInteractionTypeGroup["0"].fullInteractionType.length; i++) {
+          $("#pillbox").append("<b>"+response.fullInteractionTypeGroup["0"].fullInteractionType[i].interactionPair["0"].description+"</b>")
+          }
+})};
 
   // This function constructs a schedule's HTML
   function createNewRow(schedule) {
@@ -82,7 +106,6 @@ $(document).ready(function() {
     // var newScheduleDate = $("<small>");
     var newScheduleDosage = $("<small>");
     var newScheduleSched = $("<small>");
-
     var newSchedulePatient = $("<h5>");
     newSchedulePatient.text("Patient: " + schedule.Patient.name);
     newSchedulePatient.css({
@@ -98,10 +121,12 @@ $(document).ready(function() {
     newSchedulePanelNotes.addClass("panel-body");
     var newScheduleNotes = $("<p>");
     newScheduleMed_name.text(schedule.med_name + " ");
+    medlist.push(schedule.med_code);
     newScheduleNotes.text(schedule.notes);
     // newScheduleDate.text(formattedDate);
     newScheduleDosage.text(schedule.dosage + " ");
-    newScheduleSched.text(schedule.sched + " ");   
+    newScheduleSched.text(schedule.sched + " ");
+    var newScheduleImage = $("<img class='pill' src="+schedule.img_link+">");   
 
     // newScheduleMed_name.append(newScheduleDate);
     newScheduleMed_name.append(newScheduleDosage);
@@ -118,9 +143,13 @@ $(document).ready(function() {
     newSchedulePanelNotes.append(newScheduleNotes);
     newSchedulePanel.append(newSchedulePanelHeading);
     newSchedulePanel.append(newSchedulePanelNotes);
+
+    newSchedulePanel.append(newScheduleImage);
+
     newSchedulePanel.data("schedule", schedule);
     return newSchedulePanel;
   }
+
 
   // This function figures out which schedule we want to delete and then calls deleteSchedule
   function handleScheduleDelete() {

@@ -3,6 +3,9 @@ module.exports = function(sequelize, DataTypes) {
     img_link: {
       type: DataTypes.STRING
     },
+    med_code: {
+      type: DataTypes.STRING
+    },
     med_name: {
       type: DataTypes.STRING,
       allowNull: false,
