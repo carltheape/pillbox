@@ -1,0 +1,210 @@
+body, * {
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+h5 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+#map {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+#secondbutton {
+	margin-top: 15px;
+}
+
+
+.dropdown-toggle {
+	height: 25px;
+	background-color: #E7E7E7;
+	margin-bottom: 2px;
+}
+
+#reset {
+	margin-top: 20px;
+}
+
+#logo{
+	height:50px;
+	width:50px;
+	padding: 0px;
+	margin-right: 10px;
+}
+
+#pillguruassets{
+	width: 450px;
+	height: auto;
+	margin-top: 20px;
+}
+
+.button {
+	border:none;
+	border-radius: 5px;
+	background-color: #E7E7E7;
+	margin-top: 20px;
+}
+
+#ident_text {
+	border-radius: 5px;
+	background-color: white;
+}
+
+#footer {
+	background-color: #E7E7E7;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+
+.row {
+	margin-bottom: 30px;
+}
+
+.lilogo {
+	width: 200px;
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	
+}
+
+.lilogo:hover {
+	opacity: .9;
+	border: solid black 4px;
+	border-radius: 500px;
+	
+}
+.teampic {
+	width: 200px;
+	height: 200px;
+	border-radius: 500px;
+	margin-top: 40px;
+	border: solid black 4px;
+}
+
+#mail {
+	margin-bottom: 50px;
+	padding-bottom:80px;
+}
+
+.jumbotron p {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+h2 {
+	padding-top: 70px;
+}
+
+.navbar-default {
+	margin-bottom: 0px;
+}
+
+li {
+     cursor: pointer;
+     cursor: hand;
+   }
+
+#welcometext{
+	text-align: center;
+}
+
+#ourteam {
+	text-align: center;
+}
+
+.img-responsive {  
+margin-bottom: 30px;    
+-webkit-transition: all 0.35s ease-in-out;    
+-moz-transition: all 0.35s ease-in-out;    
+transition: all 0.35s ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+}     
+
+.portfolio-item:hover,  
+.portfolio-item:active,   
+.portfolio-item:focus {
+
+
+-ms-transform: scale(2.5);    
+-moz-transform: scale(2.5);  
+-webkit-transform: scale(2.5);  
+-o-transform: scale(2.5);  
+transform: scale(2.5);    
+position:relative;      
+z-index:100;  
+}
+
+.DivName {cursor: pointer}
+}
+
+.btn {
+	margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 575px) {
+	.jumbotron p {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 10px;
+	}
+	
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+	#jumbotron p {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 10px;
+	}
+	#assetsimage {
+		width: 90%;
+	}
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#jumbotron p {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 10px;
+	}
+
+	#assetsimage {
+		width: 90%;
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#assetsimage {
+		width: 90%;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	#assetsimage {
+		width: 90%;
+	}
+}
