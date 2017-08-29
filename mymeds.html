@@ -10,24 +10,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#5cc4ff">
+    <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#5cc4ff">
 </head>
 
 <body>
     <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-        </button>
-          <a class="navbar-brand" href="#">Pillbox</a>
-      </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         
+            <img class = "navbar-brand" id = "logo" src="assets/images/pillgurulogo.png"></div>
+            <a class="navbar-brand" href="#">PillGuru</a>
+             
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">
             </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html">Home</a></li>
@@ -35,11 +53,11 @@
                 <li class="active"><a href="mymeds.html">My Meds<span class="sr-only">(current)</span></a></li>
                 <li><a href="logout.html">Log out</a></li>
               </ul>
-          </div>
-      </div>
-  </nav>
-
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Medication</button>
+                            </div>
+                          </div>
+                        </nav>
+            
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Medication</button>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -62,10 +80,11 @@
                                 <label for="medsinput2">Dosage</label>
                                 <input type="text" class="form-control" id="medsinput2" placeholder="Dosage">
                                 </div>
-                                <div class="addnotes">
-                                <label for="medsinput3">Additional</label>
-                                <input type="text" class="form-control" id="medsinput3" placeholder="Dosage">
+                                <div class="addcomment">
+                                <label for="medsinput3">Additional notes</label>
+                                <input type="text" class="form-control" id="medsinput3" placeholder="Additional notes">
                                 </div>
+
                                 <p>When are you supposed to take this medication?</p>
                                 <div><label class="form-check-label">
                                 <input class="form-check-input" type="checkbox">  M (Morning)   
@@ -86,55 +105,6 @@
     </div>
 
   </div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-
-
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Add user</button>
-
-<!-- Modal -->
-<div id="myModal2" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Who is supposed to take the medication?:</h4>
-      </div>
-      <div class="modal-body">
-        <form role="form" action="" method="post" class="registration-form">
-                              <form>
-                                <div class="adduser">
-                                <label for="adduser">User</label>
-                                <input type="text" class="form-control" id="adduser" placeholder="User">
-                                </div>
-                                <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
-                                </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-</form>
-</div>
-</div>
-</div>
 </div>
 
             
@@ -163,16 +133,19 @@
     </table>
     </div>
 </div>
+</form>
+</div>
+</div>
+</div>
+</div>
 
-    <div class="py-5 bg-info" id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 my-3" id="footer">
-          <p>© Copyright 2017 www.pillbox.com - All rights reserved. </p>
-        </div>
-      </div>
+   <div class="footer navbar-fixed-bottom" id="footer">
+      <p class="footer-block">© Copyright 2017 - www.pillguru.com - All rights reserved.</p>
     </div>
-  </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

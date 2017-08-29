@@ -2,10 +2,6 @@ body, * {
 	font-family: 'Quicksand', sans-serif;
 }
 
-h3 {
-	margin-top: 0px;
-}
-
 
 h5 {
 	margin-top: 50px;
@@ -18,15 +14,9 @@ h5 {
 	margin-right: 10%;
 }
 
-
-#video {
-	width: 100%;
-	height: auto;
-}
-
-#link {
-  margin-right: 30px;
-  margin-bottom: 30px;
+.img-responsive{
+  max-width: 100%;
+  height: auto;
 }
 
 #secondbutton {
@@ -44,8 +34,17 @@ h5 {
 	margin-top: 20px;
 }
 
-#logo {
-	width: 100%;
+#logo{
+	height:50px;
+	width:50px;
+	padding: 0px;
+	margin-right: 10px;
+}
+
+#pillguruassets{
+	width: 450px;
+	height: auto;
+	margin-top: 20px;
 }
 
 .button {
@@ -62,17 +61,11 @@ h5 {
 
 #footer {
 	background-color: #E7E7E7;
-	padding-top: 40px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
-.tricksimage {
-	border-radius: 500px;
-	margin-left: 30px;
-	margin-right: 0px;
-	margin-top: 20px;
-	padding-right: 0px;
-}
 
 .row {
 	margin-bottom: 30px;
@@ -85,22 +78,26 @@ h5 {
     opacity: 0;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+	
 }
 
 .lilogo:hover {
 	opacity: .9;
+	border: solid black 4px;
+	border-radius: 500px;
+	
 }
 .teampic {
 	width: 200px;
 	height: 200px;
 	border-radius: 500px;
 	margin-top: 40px;
+	border: solid black 4px;
 }
-
-
 
 #mail {
 	margin-bottom: 50px;
+	padding-bottom:80px;
 }
 
 .jumbotron p {
@@ -120,6 +117,14 @@ li {
      cursor: pointer;
      cursor: hand;
    }
+
+#welcometext{
+	text-align: center;
+}
+
+#ourteam {
+	text-align: center;
+}
 
 .img-responsive {  
 margin-bottom: 30px;    
@@ -159,9 +164,9 @@ z-index:100;
 	.jumbotron p {
 		margin-left: 10px;
 		margin-right: 10px;
-		font-size: 5px;
+		font-size: 10px;
 	}
-
+	
 }
 
 
@@ -170,6 +175,9 @@ z-index:100;
 		margin-left: 10px;
 		margin-right: 10px;
 		font-size: 10px;
+	}
+	#assetsimage {
+		width: 90%;
 	}
   
 }
@@ -180,18 +188,23 @@ z-index:100;
 		margin-left: 10px;
 		margin-right: 10px;
 		font-size: 10px;
+	}
+
+	#assetsimage {
+		width: 90%;
+	}
 }
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-	.tricksimage {
+	#assetsimage {
 		width: 90%;
 	}
 }
 
 
 @media (min-width: 1200px) {
-	.tricksimage {
+	#assetsimage {
 		width: 90%;
 	}
 }
