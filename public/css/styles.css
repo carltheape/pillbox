@@ -1,0 +1,72 @@
+button.submit {
+  float: right;
+}
+
+form#cms {
+  margin-top: 50px;
+}
+
+#cms textarea {
+  resize: none;
+}
+
+.panel-heading button.delete,
+button.edit {
+  float: right;
+  margin: 5px;
+}
+
+/*.author-container {
+  margin-top: 50px;
+}
+*/
+/*.author-list {
+  margin-top: 25px;
+}*/
+
+.patient-container {
+  margin-top: 50px;
+}
+
+.patient-list {
+  margin-top: 25px;
+}
+
+.pillbox-container {
+  margin-top: 30px;
+}
+
+.pillbox {
+  margin-top: 30px;
+}
+
+/*.blog-container {
+  margin-top: 30px;
+}
+
+.blog {
+  margin-top: 30px;
+}*/
+
+.hidden {
+  display: none;
+}
+
+#patient-name {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+}
+/*#author-name {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+}*/
+
+.top-30 {
+  margin-top: 30px;
+}
+
+.pill{
+  height: 200px;
+}
