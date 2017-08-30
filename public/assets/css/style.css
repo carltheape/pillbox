@@ -85,6 +85,7 @@ h5 {
 	opacity: .9;
 	border: solid black 4px;
 	border-radius: 500px;
+	cursor:pointer;
 	
 }
 .teampic {
@@ -131,9 +132,9 @@ margin-bottom: 30px;
 -webkit-transition: all 0.35s ease-in-out;    
 -moz-transition: all 0.35s ease-in-out;    
 transition: all 0.35s ease-in-out;     
-cursor: -webkit-zoom-in;      
+/*cursor: -webkit-zoom-in;      
 cursor: -moz-zoom-in;      
-cursor: zoom-in;  
+cursor: zoom-in;  */
 }     
 
 .portfolio-item:hover,  
@@ -207,4 +208,8 @@ z-index:100;
 	#assetsimage {
 		width: 90%;
 	}
+}
+
+.medAdd{
+	margin: 20px;
 }
