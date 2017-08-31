@@ -217,3 +217,14 @@ z-index:100;
 .pillimg{
 	height: 300px;
 }
+
+div.pillbox-table {
+  margin: 5px;
+  padding-top: -3px;
+  style:border:1px solid black;  
+}
+
+table.pillbox-table{
+	margin: 1px;
+	font-size: 18px;
+}

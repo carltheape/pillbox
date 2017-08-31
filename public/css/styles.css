@@ -25,12 +25,12 @@ button.edit {
 }
 
 .pillbox-container {
-  margin-top: 30px;
+  margin-top: 10px;
   display: table;
 }
 
 .pillbox {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .hidden {
@@ -50,3 +50,5 @@ button.edit {
 .pillimg{
   height: 25px;
 }
+
+
