@@ -44,7 +44,7 @@ $(document).ready(function() {
           calling = response;
           console.log(queryURL);
 
-          if(response.replyStatus.imageCount = "0"){
+          if(response.replyStatus.imageCount === "0"){
             rxurl = "assets/images/pillgurulogo.png";
             medCode = "";
           }

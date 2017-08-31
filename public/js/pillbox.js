@@ -83,7 +83,7 @@ function medConflict(array){
           console.log(response);
           console.log(response.fullInteractionTypeGroup["0"].fullInteractionType.length);
           for (var i = 0; i < response.fullInteractionTypeGroup["0"].fullInteractionType.length; i++) {
-//          $("#pillbox").append("<b>"+response.fullInteractionTypeGroup["0"].fullInteractionType[i].interactionPair["0"].description+"</b>")
+         $("#pillbox").append("<b>"+response.fullInteractionTypeGroup["0"].fullInteractionType[i].interactionPair["0"].description+"</b>")
           }
 })};
 
