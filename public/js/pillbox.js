@@ -132,7 +132,7 @@ function medConflict(array){
     newScheduleDosage.text(schedule.dosage + " ");
     newScheduleSched.text(schedule.sched + " ");
 //    var newScheduleImage = $("<img class='pill' src="+schedule.img_link+" style='width:304px;height:228px;'>");   
-    var newScheduleImage = $("<div class='col-md-2'> <img class='pill' src="+schedule.img_link+" style='width:15%;height:25%;'>");   
+    var newScheduleImage = $("<div class='col-md-2'> <img class='pillimg' src="+schedule.img_link+">");   
 
     newScheduleMed_name.append(newScheduleDosage);
     newScheduleMed_name.append(newScheduleSched);
