@@ -43,9 +43,16 @@ $(document).ready(function() {
         }).done(function(response) {
           calling = response;
           console.log(queryURL);
+
+          if(response.replyStatus.imageCount = "0"){
+            rxurl = "assets/images/pillgurulogo.png";
+            medCode = "";
+          }
+          else{
           rxurl = response.nlmRxImages["0"].imageUrl;
           medCode = response.nlmRxImages["0"].rxcui;
-          // console.log(rxurl);
+        }
+
           handleFormSubmit();
   
 });
