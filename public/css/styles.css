@@ -16,14 +16,6 @@ button.edit {
   margin: 5px;
 }
 
-/*.author-container {
-  margin-top: 50px;
-}
-*/
-/*.author-list {
-  margin-top: 25px;
-}*/
-
 .patient-container {
   margin-top: 50px;
 }
@@ -34,19 +26,12 @@ button.edit {
 
 .pillbox-container {
   margin-top: 30px;
+  display: table;
 }
 
 .pillbox {
   margin-top: 30px;
 }
-
-/*.blog-container {
-  margin-top: 30px;
-}
-
-.blog {
-  margin-top: 30px;
-}*/
 
 .hidden {
   display: none;
@@ -57,11 +42,6 @@ button.edit {
   height: 35px;
   margin-top: 5px;
 }
-/*#author-name {
-  width: 100%;
-  height: 35px;
-  margin-top: 5px;
-}*/
 
 .top-30 {
   margin-top: 30px;
