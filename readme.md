@@ -41,7 +41,8 @@ navigate to client in a browser
 ```
 http://localhost:8080
 ```
-
+![Pill Guru Title](public/assets/images/titlepage.jpg)
+![Pill Guru MedList](public/assets/images/pills.jpg)
 
 ## Built With...
 
@@ -58,6 +59,7 @@ http://localhost:8080
 * **Florian Hutter** - *Front End Guru and graphic designer* - (https://github.com/florianhutter)
 * **Caitlin Rose** - *Navigation, Authorization and bits and bobs* - (https://github.com/cnrose)
 
+![Pill Guru Group](public/assets/images/group.jpg)
 
 ## Acknowledgments
 **Thanks to the FDA and the U.S. National Library or Medicine**
