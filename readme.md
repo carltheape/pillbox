@@ -60,9 +60,8 @@ http://localhost:8080
 
 
 ## Acknowledgments
-**Thanks to the FDA **
+**Thanks to the FDA and the U.S. National Library or Medicine**
 (https://open.fda.gov/)
-**... and the U.S. National Library or Medicine**
 (https://lhncbc.nlm.nih.gov/rximage-API)
 
 * Built for GA tech coding bootcamp
