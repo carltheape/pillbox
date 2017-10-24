@@ -1,4 +1,5 @@
 ![Pill Guru Logo](public/assets/images/ms-icon-150x150.png)
+#Pill Guru
 
 A medication organizer and tracker.  Using MySQL, Node, API calls, and Express my team built an app that can track medication for a given user, store images of the given medication and alert the user to any possible conflicts among a medication list.  
 
