@@ -1,5 +1,5 @@
 
-#Pill Guru
+# Pill Guru
 
 ![Pill Guru Logo](public/assets/images/ms-icon-150x150.png)
 
